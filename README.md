@@ -7,24 +7,23 @@ Project Structure : User details microservice (Using Spring MVC) will display in
 Below are the steps for Microservices and Spring MVC excluding Eureka, Hystrix and resdis.
 Step 1 : Download three microservices from start.spring.io : Userdetailservice, productservice, reviewservice
 step 2 : Add dependicies : User detail service dependencies 
-<dependencies>
-		<dependency>
-    // We use this dependency for repository to connect to database
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
-    // under web dependency we get rest template also
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-    <dependency>
-			<groupId>org.apache.tomcat.embed</groupId>
-			<artifactId>tomcat-embed-jasper</artifactId>
-			<scope>provided</scope>
-		</dependency>
-
-
+                 <dependencies>
+		 <dependency>
+                          // We use this dependency for repository to connect to database
+			  <groupId>org.springframework.boot</groupId>
+			  <artifactId>spring-boot-starter-data-jpa</artifactId>
+		 </dependency>
+                 // under web dependency we get rest template also
+		 <dependency>
+			  <groupId>org.springframework.boot</groupId>
+			  <artifactId>spring-boot-starter-web</artifactId>
+		 </dependency>
+                 <dependency>
+			  <groupId>org.apache.tomcat.embed</groupId>
+			  <artifactId>tomcat-embed-jasper</artifactId>
+			  <scope>provided</scope>
+		 </dependency>
+	 
 		<!-- jstl for jsp -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
