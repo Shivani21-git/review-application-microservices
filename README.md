@@ -1,12 +1,16 @@
 # review-application-microservices
+
 This is review application project using microservices, Spring MVC, Eureka, Hystrix and redis.
 Microservices : User detail(Spring MVC) ---> Product service (Spring boot)
                                         ---> Review service (Spring boot)
+					
 Project Structure : User details microservice (Using Spring MVC) will display index page which will take user name and email as input and then the user detail microservice will call product microservice(Using spring boot) , get the list of products and will display it. User detail microservice will also connect with review microservices for read review and post review.
 
 
 Below are the steps for Microservices and Spring MVC excluding Eureka, Hystrix and resdis.
+
 Step 1 : Download three microservices from start.spring.io : Userdetailservice, productservice, reviewservice
+
 step 2 : Add dependicies : User detail service dependencies 
 
                  <dependencies>
